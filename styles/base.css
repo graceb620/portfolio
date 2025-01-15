@@ -1,8 +1,15 @@
 /** Navigation Bar Styling *******************************************/
 body {
   text-align: center;
-  background-color: #BF9268;
+  background-color: #ffffff;
   font-family: Cambria;
+}
+
+header {
+  background-color: #303848;
+  padding: 10px;
+  border: 2px #BF9268;
+  color: white;
 }
 
 /* Add a black background color to the top navigation */
@@ -10,20 +17,14 @@ body {
   padding: 10px 20px; /* Add padding to make buttons more clickable */
   background-color: #303848; /* NaVY background color */
   color: white; /* White text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* rounded corners */
+  border: 2px #BF9268; /* Add a black border */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s; /* Add smooth transition effect */
-  margin: 0 10px;
+  margin: 0;
+  font-family: Cambria;
 }
 
 /* Hover effect */
 .button-container button:hover {
   background-color: #5f6a81; /* Lighter blue color on hover */
-}
-
-body {
-  text-align: center;
-  background-color: #BF9268;
-  font-family: Cambria;
 }
