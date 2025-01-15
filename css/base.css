@@ -1,18 +1,19 @@
-/** Navigation Bar Styling *******************************************/
+/* body */
 body {
-  text-align: center;
-  background-color: #ffffff;
-  font-family: Cambria;
+  text-align: center; /*Center everything*/
+  background-color: #ffffff; /*make the background color white*/
+  font-family: Cambria; /*Make the font Cambria*/
 }
 
+/* header */
 header {
-  background-color: #303848;
-  padding: 10px;
+  background-color: #303848; /*make background color navy*/
+  padding: 10px; /*Add padding*/
   border: 2px #BF9268;
   color: white;
 }
 
-/* Add a black background color to the top navigation */
+/* button container */
 .button-container button {
   padding: 10px 20px; /* Add padding to make buttons more clickable */
   background-color: #303848; /* NaVY background color */
