@@ -1,17 +1,55 @@
-#about-me .row {
-    display: flex; /* Enable flexbox */
-    justify-content: space-between; /* Space out columns */
-    align-items: center; /* Align items vertically */
-  }
-  
-  .column {
-    flex: 1; /* Flexibly divide space between columns */
-    padding: 10px; /* Add padding inside columns */
-  }
-  
-  #headshot img {
-    width: 150px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Make circular */
-  }
-  
+/* Target the parent div with the id "about-me" */
+#about-me {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+/* Target the child div with the id "about-me-text" */
+#about-me-text {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+/* Target the child div with the id "headshot" */
+#headshot {
+    display: inline-block;
+    border: 1px solid blue; /* Example: You can use different styles if needed */
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+/* Target the parent div with the id "recent-project" */
+#recent-project {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+/* Target the child div with the id "wesley-photo" */
+#wesley-photo {
+    display: inline-block;
+    border: dddd1px solid green; /* Example: Different color for this element */
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}ddddd
+
+/* Target the nested div with the id "wesley" */
+#wesley {
+    display: inline-block;
+    border: 1px solid purple; /* Example style */
+    padding: 0.5rem 0.5rem;
+}
+
+/* Target the child div with the id "recent-project-text" */
+#recent-project-text {
+    display: inline-block;
+    border: 1px solid orange; /* Example: Distinct border style */
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+

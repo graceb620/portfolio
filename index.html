@@ -7,13 +7,17 @@ This doc holds the code for the Home page of my portfolio
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
     <!-- Creating connection between styling doc and webpage -->
     <link rel="stylesheet" href="css/base.css"> 
     <link rel="stylesheet" href="css/index.css"> 
+
     <title>Home</title>
 </head>
+
+<!-- Header and Navigation bar -->
 <body>
     <header>
         <h1>Grace Bero</h1>
@@ -24,48 +28,40 @@ This doc holds the code for the Home page of my portfolio
         <a href="contact.html"><button>Contact Me</button></a>
     </div>
 
+<!-- Actual Page Content -->
     <main>
         <!-- About me block -->
-        <section id="about-me">
-            <div class="row">
-                <!-- Column 1: Paragraph -->
-                <div class="column">
-                    <h2>About Me</h2>
-                    <p>Hello, I am a senior studying at Drake University. I am pursuing a BSBA in Data Analytics with minors in 
-                        Computer Science and Management. 
-                    </p>
-                </div>
-                <!-- Column 2: Headshot -->
-                <div class="column" id="headshot">
-                    <img src="pictures/headshot.PNG" alt="headshot">   
-                </div> 
+        <div class="parent" id="about-me">
+            <h2>About Me</h2>
+            <div class="child" id="about-me-text">
+                <h3>Who is Grace?</h3>
+                <p>
+                    This is about me...
+                </p>
+            <div class="child" id="headshot">
+                <img src="pictures/headshot.PNG" alt="headshot">
             </div>
-        </section>
-
-        <!-- Recent Project Block -->
-        <section id="recent-project">
-            <h2>Most Recent Project</h2>
-            <div class="Picture" id="wesley">
-                <!-- Column 2: Photo -->
-                <img src="wesley.jpg" alt="wesley-life">
-            </div>
-            <div class="row">
-                <!-- Column 1: Paragraph -->
-                 <h2>Iowa Food Insecurity</h2>
-                 <p></p>
-            </div>
-        </section>
-
-        <!-- Work History Block -->
-        <section id="work">
-            <h2>Work History</h2>
-        </section>
+        </div>
 
         <!-- Relavent skills block -->
         <section id="skills">
             <h2>Relavent Skills</h2>
         </section>
-
+        
+        <!-- Recent Project Block -->
+        <div class="parent" id="recent-project">
+            <h2>Most Recent Project</h2>
+            <div class="child" id="wesley-photo">
+                <div class="picture" id="wesley">
+                    <img src="pictures/wesley.jpg" alt="wesley-life">
+            <div class="child" id="recent-project-text">
+                <!-- Column 2: Paragraph -->
+                <h3>Iowa Food Insecurity</h3>
+                <p>
+                    This was a project...
+                </p>
+            </div>
+        </div>
         <!-- Certifications -->
         <section id="certifications">
             <h2>Certifications</h2>

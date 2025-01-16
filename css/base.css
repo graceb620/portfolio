@@ -1,10 +1,21 @@
+/* 
+@Author Grace bero
+base.css
+
+This is the base css file for the stylings that are consistent across the entire 
+webpage. This includes the h1 and button-container stylings. 
+*/
+
 /* body */
 body {
   text-align: center; /*Center everything*/
   background-color: #ffffff; /*make the background color white*/
   font-family: Cambria; /*Make the font Cambria*/
-  max-width: 1000px; /* Cap at 1000px */
-  justify-items: center; /* Center items horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px; /* Prevent it from becoming too wide */
 }
 
 /* header */
