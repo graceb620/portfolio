@@ -1,5 +1,17 @@
-#headshot img {
-    width: 150px; /* Set desired width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Make it circular */
+#about-me .row {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space out columns */
+    align-items: center; /* Align items vertically */
   }
+  
+  .column {
+    flex: 1; /* Flexibly divide space between columns */
+    padding: 10px; /* Add padding inside columns */
+  }
+  
+  #headshot img {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Make circular */
+  }
+  
