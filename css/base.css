@@ -3,7 +3,6 @@ body {
   text-align: center; /*Center everything*/
   background-color: #ffffff; /*make the background color white*/
   font-family: Cambria; /*Make the font Cambria*/
-  max-width: 800px; /* Cap at 800px */
 }
 
 /* header */
