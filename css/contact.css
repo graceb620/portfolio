@@ -1,3 +1,39 @@
 h1 {
     margin-bottom: 0px;
 }
+
+#contact-me {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add spacing inside the box */
+    margin: 20px 0; /* Add vertical spacing around the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#email #linkedin {
+    display: flex; /* Create a flex container for horizontal alignment */
+    align-items: center; /* Vertically center-align the image and text */
+
+}
+
+#email img #linkedin img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 20px; /* Ensure consistent size */
+    height: 20px;
+}
+
+#email p {
+    margin: 0; /* Remove default margin */
+   
+}
+
+#grace-photo img
+ {
+    width: 250px; /* Adjust width for the oval shape */
+    height: 300px; /* Adjust height for the oval shape */
+    border-radius: 50%; /* Creates an oval because width and height differ */
+    object-fit: cover; /* Ensures the image fits nicely */
+}

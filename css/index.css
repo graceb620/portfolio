@@ -11,35 +11,53 @@ index.html will get styles from this file
     margin-top: -50px;
 }
 
-/* Column based items */
-.parent {
-    display: flex;
-    gap: 1px; /* Adds space between children */
-}
-
-.child {
-    flex: 1; /* Ensures children take up equal space, can be adjusted as needed */
-}
-
 /* Recent Project Sections */
 #recent-project {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
     background-color: #f5f5f5; /* Light gray background */
     border: 1px solid #dcdcdc; /* Light gray border */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Add spacing inside the box */
     margin: 20px 0; /* Add vertical spacing around the box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 #recent-project-text {
+    flex: 1; /* Allows text block to grow */
     align-items: flex-start;
+    padding: 20px;
+}
+
+#wesley-photo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack photo and buttons vertically */
+    gap: 20px; /* Gap between photo and buttons */
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column; /* Stack photo and buttons */
+    align-items: center; /* Center photo and buttons */
+    gap: 20px; /* Add spacing between photo and buttons */
 }
 
 #wesley img {
     width: 300px;
     height: auto;
     object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
 }
+
+#wesley-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons */
+    align-items: center; /* Center buttons */
+    gap: 10px; /* Add spacing between buttons */
+}
+
 
 /* About me Sections */
 #about-me-text {
@@ -63,7 +81,7 @@ index.html will get styles from this file
 
 u1 {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #current {

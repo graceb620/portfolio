@@ -17,6 +17,16 @@ p {
   font-size: 1.3em; /* Adjust font size */
 }
 
+/* Column based items */
+.parent {
+  display: flex;
+  gap: 1px; /* Adds space between children */
+}
+
+.child {
+  flex: 1; /* Ensures children take up equal space, can be adjusted as needed */
+}
+
 /* body */
 body {
   text-align: center; /* Center text */
@@ -37,7 +47,6 @@ header {
 
 /* h1 */
 h1 {
-  letter-spacing: 6px; /* Add letter spacing */
   font-family: Brush Script MT;
   font-size: 2.5cm; /* Adjust font size */
   margin-top: 0px;
@@ -55,7 +64,7 @@ h1 {
   margin-bottom: 20px; /* Space below buttons */
 }
 
-.button-container button {
+button {
   padding: 10px 20px; /* Padding for clickable buttons */
   background-color: #303848; /* Navy background */
   color: white; /* White text */
@@ -67,6 +76,6 @@ h1 {
 }
 
 /* Hover effect for buttons */
-.button-container button:hover {
+button:hover {
   background-color: #5f6a81; /* Lighter navy on hover */
 }
