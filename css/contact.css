@@ -13,27 +13,29 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-#email #linkedin {
+#contact-methods {
     display: flex; /* Create a flex container for horizontal alignment */
     align-items: center; /* Vertically center-align the image and text */
-
+    gap: 10px; /* Add consistent spacing between the image and text */
+    margin: 5px 0; /* Add vertical spacing between sections */
 }
 
-#email img #linkedin img {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 20px; /* Ensure consistent size */
+#contact-methods img {
+    width: 20px; /* Ensure consistent size for the image */
     height: 20px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    vertical-align: middle; /* Ensure alignment with text baseline */
 }
 
-#email p {
-    margin: 0; /* Remove default margin */
-   
+#contact-methods p {
+    margin: 0; /* Remove default margin for text alignment */
 }
+
 
 #grace-photo img
  {
-    width: 250px; /* Adjust width for the oval shape */
-    height: 300px; /* Adjust height for the oval shape */
+    width: 200px; /* Adjust width for the oval shape */
+    height: 250px; /* Adjust height for the oval shape */
     border-radius: 50%; /* Creates an oval because width and height differ */
     object-fit: cover; /* Ensures the image fits nicely */
 }

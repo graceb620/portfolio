@@ -20,34 +20,46 @@
     <div class="container">
         <div class="button-container">
             <a href="index.html"><button>Home</button></a> 
+            <a href="about_me.html"><button>About Me</button></a>
             <a href="projects.html"><button>Projects</button></a>
             <a href="contact.html"><button>Contact Me</button></a>
         </div>
 
         <!-- Actual Page Content -->
         <main>
-            <main>
-                <!-- Contact me block -->
-                <div class="parent" id="contact-me">
-                    <div class="child" id="grace-photo">
-                        <img src="pictures/grace.jpeg" alt="grace">
+            <!-- Contact me block -->
+            <div class="parent" id="contact-me">
+                <div class="child" id="grace-photo">
+                    <img src="pictures/grace.jpeg" alt="grace">
+                </div>
+                <div class="child" id="methods">
+                    <h2>How you can reach me</h2>
+                    <p>Feel free to reach out to me through any of the following methods:</p>
+                    <!-- Email -->
+                    <div class="parent" id="contact-methods">
+                        <img src="pictures/email.webp" alt="email" height="20px" width="20px">
+                        <p> graceb620@outlook.com</p>
                     </div>
-                    <div class="child" id="methods">
-                        <h2>How you can reach me</h2>
-                        <p>Feel free to reach out to me through any of the following methods:</p>
-                        <!-- Email -->
-                        <div class="parent" id="email">
-                            <img src="pictures/email.webp" alt="email" height="20px" width="20px">
-                            <p> graceb620@outlook.com</p>
-                        </div>
-                        <!-- LinkedIn -->
-                        <div class="parent" id="linkedin">
+                    <!-- LinkedIn -->
+                    <div class="parent" id="contact-methods"> 
+                        <!-- Make the logo a clickable link -->
+                        <a href="https://www.linkedin.com/in/grace-bero/" target="_blank">
                             <img src="pictures/linkedin.webp" alt="linkedin" height="20px" width="20px">
-                            <p> linkedin.com/in/grace-bero/</p>
-                        </div>
-                        <!--  -->
+                        </a>
+                        <p> linkedin.com/in/grace-bero/</p>
+                    </div>
+
+                    <!-- Github -->
+                    <div class="parent" id="contact-methods"> 
+                        <!-- Make the logo a clickable link -->
+                        <a href="https://github.com/graceb620" target="_blank">
+                            <img src="pictures/github.png" alt="github" height="20px" width="20px">
+                        </a>
+                        <p> github.com/graceb620</p>
+
                     </div>
                 </div>
+            </div>
         </main>
     </div>
 </body>

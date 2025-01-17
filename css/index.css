@@ -11,6 +11,15 @@ index.html will get styles from this file
     margin-top: -50px;
 }
 
+#about-me-text {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: center; /* Center the text inside the <p> */
+    height: 100%; /* Ensure the div takes up available height (if necessary) */
+    padding: 20px; /* Add padding for spacing */
+}
+
 /* Recent Project Sections */
 #recent-project {
     display: flex;
@@ -56,12 +65,9 @@ index.html will get styles from this file
     flex-direction: column; /* Stack buttons */
     align-items: center; /* Center buttons */
     gap: 10px; /* Add spacing between buttons */
-}
-
-
-/* About me Sections */
-#about-me-text {
-    align-items: flex-start;
+    position: static; /* Ensure it scrolls with the page */
+    z-index: auto; /* Reset stacking order so it doesn't overlap the navbar */
+    margin-top: 20px; /* Add space to separate it from the navbar */
 }
 
 #headshot img {
@@ -83,6 +89,7 @@ u1 {
     text-align: left;
     font-size: 1.2em;
 }
+
 
 #current {
     background-color: #6a7b99; /* Light gray background */
