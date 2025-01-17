@@ -3,6 +3,8 @@
 index.html
 
 This doc holds the code for the Home page of my portfolio
+
+Styling is applied through the base.css and index.css files
 -->
 
 <html lang="en">
@@ -17,62 +19,126 @@ This doc holds the code for the Home page of my portfolio
     <title>Home</title>
 </head>
 
-<!-- Header and Navigation bar -->
 <body>
+    <!-- Header and Navigation bar -->
     <header>
-        <h1>Grace Bero</h1>
+        <h1 id="title">Grace Bero</h1>
+        <h2 id="degree">BSBA Data Analytics, Drake University 2025</h2>
     </header>
-    <div class="button-container">
-        <a href="index.html"><button>Home</button></a> 
-        <a href="projects.html"><button>Projects</button></a>
-        <a href="contact.html"><button>Contact Me</button></a>
+
+    <!-- Main content with max-width applied -->
+    <div class="container">
+        <div class="button-container">
+            <a href="index.html"><button>Home</button></a> 
+            <a href="projects.html"><button>Projects</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+        </div>
+
+        <!-- Actual Page Content -->
+        <main>
+            <!-- About me block -->
+            <div class="parent" id="about-me">
+                <div class="child" id="about-me-text">
+                    <h2>Who am I?</h2>
+                    <p>This is about me...</p>
+                </div>
+                <div class="child" id="headshot">
+                    <img src="pictures/headshot.PNG" alt="headshot">
+                </div>
+            </div>
+
+            <!-- Recent Project Block -->
+            <div class="parent" id="recent-project">
+                <div class="child" id="wesley-photo"> 
+                    <div class="picture" id="wesley">
+                        <img src="pictures/wesley.webp" alt="wesley-life">
+                    </div>
+                </div>
+                <div class="child" id="recent-project-text">
+                    <h2>Recent Project</h2>
+                    <p>This was a project...</p>
+                </div>
+            </div>
+
+            <!-- Relevant skills block -->
+            <h2>Technical Skills</h2>
+            <div class="parent" id="skills">
+                <div class="child" id="python">
+                    <img src="pictures/python.png" alt="python-logo">
+                    <h3>Python</h3>
+                </div>
+                <div class="child" id="R">
+                    <img src="pictures/R.png" alt="R-logo">
+                    <h3>R</h3>
+                </div>
+                <div class="child" id="SAS">
+                    <img src="pictures/SAS.webp" alt="SAS-logo">
+                    <h3>SAS</h3>
+                </div>
+                <div class="child" id="SQL">
+                    <img src="pictures/SQL.png" alt="SQL-logo">
+                    <h3>SQL</h3>
+                </div>
+            </div>
+            <!-- Second row of skills -->
+            <div class="parent" id="skills">
+                <div class="child" id="excel">
+                    <img src="pictures/excel.png" alt="Excel-logo">
+                    <h3>Excel</h3>
+                </div>
+                <div class="child" id="Github Repositories">
+                    <img src="pictures/github.png" alt="github-logo">
+                    <h3>Github Repositories</h3>
+                </div>
+                <div class="child" id="Machine Learning Models">
+                    <img src="pictures/machine-learning.png" alt="machine-learning-logo">
+                    <h3>Machine Learning Models</h3>
+                </div>
+                <div class="child" id="Data Cleaning">
+                    <img src="pictures/data-cleaning.png" alt="data-cleaning-logo">
+                    <h3>Data Cleaning</h3>
+                </div>
+            </div>
+
+            <!-- Relevant courses block -->
+            <div class="parent" id="courses">
+                <div class="child" id="current">
+                    <h2>Current Courses SP25</h2>
+                    <u1>
+                        <li>Cases in Data Analytics (STAT190)</li>
+                        <li>Business strat and policy (BUS195)</li>
+                        <li>Project Management (IS164)</li>
+                    </u1>
+                </div>
+                <div class="child" id="past">
+                    <h2>Other Relavent Courses</h2>
+                    <u1>
+                        <li>Intro to R and SAS (STAT40)</li>
+                        <li>Probability for Analytics (STAT130)</li>
+                        <li>Regression and Time Series (STAT170)</li>
+                        <li>Data Mining and General Linear Models (STAT172)</li>
+                        <li>Microsoft Office Tools for Business Analysis (IS44)</li>
+                        <li>Database Management (IS160)</li>
+                        <li>Object Oriented Programming (CS67)</li>
+                        <li>Cloud and Database Systems (CS178)</li>
+                        <li>Machine Learning (CS167)</li>
+                        <li>Computer Org. and Assembly (CS130)</li>
+                    </u1>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <section id="certifications">
+                <h2>Certifications</h2>
+            </section>
+
+            <section id="resume">
+                <h2>My Resume</h2>
+                <p>Here is a copy of my most recent resume</p>
+                <embed src="pictures/Grace_Bero_Resume.pdf" width="600" height="400" type="appication/pdf">
+
+            </section>
+
+        </main>
     </div>
-
-<!-- Actual Page Content -->
-    <main>
-        <!-- About me block -->
-        <div class="parent" id="about-me">
-            <h2>About Me</h2>
-            <div class="child" id="about-me-text">
-                <h3>Who is Grace?</h3>
-                <p>
-                    This is about me...
-                </p>
-            <div class="child" id="headshot">
-                <img src="pictures/headshot.PNG" alt="headshot">
-            </div>
-        </div>
-
-        <!-- Relavent skills block -->
-        <section id="skills">
-            <h2>Relavent Skills</h2>
-        </section>
-        
-        <!-- Recent Project Block -->
-        <div class="parent" id="recent-project">
-            <h2>Most Recent Project</h2>
-            <div class="child" id="wesley-photo">
-                <div class="picture" id="wesley">
-                    <img src="pictures/wesley.jpg" alt="wesley-life">
-            <div class="child" id="recent-project-text">
-                <!-- Column 2: Paragraph -->
-                <h3>Iowa Food Insecurity</h3>
-                <p>
-                    This was a project...
-                </p>
-            </div>
-        </div>
-        <!-- Certifications -->
-        <section id="certifications">
-            <h2>Certifications</h2>
-        </section>
-
-        <!-- Relavent courses block -->
-        <section id="courses">
-            <h2>Relevant Courses</h2>
-        </section>
-
-    </main>
 </body>
-</html>
-
