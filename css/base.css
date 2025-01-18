@@ -79,3 +79,10 @@ button {
 button:hover {
   background-color: #5f6a81; /* Lighter navy on hover */
 }
+
+footer {
+  background-color: #303848; /* Navy background color */
+  border: 4px solid #BF9268; /* Add border */
+  color: white; /* White text */
+  font-weight: normal;
+}
