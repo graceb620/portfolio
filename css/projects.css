@@ -1,3 +1,51 @@
 h1 {
     margin-bottom: 0px;
 }
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add spacing inside the box */
+    margin: 20px 0; /* Add vertical spacing around the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Ensures it takes full width of its parent */
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+
+.project-text {
+    flex: 1;
+    padding: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden; /* Hide overflow content if it spills */
+}
+
+
+
+.project-photo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack photo and buttons vertically */
+    gap: 20px; /* Gap between photo and buttons */
+}
+
+.project-photo .picture {
+    display: flex;
+    flex-direction: column; /* Stack photo and buttons */
+    align-items: center; /* Center photo and buttons */
+    gap: 20px; /* Add spacing between photo and buttons */
+}
+
+.project-photo img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
